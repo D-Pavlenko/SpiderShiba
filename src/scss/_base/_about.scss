@@ -1,0 +1,89 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    &_title {
+        margin-bottom: 80px;
+        max-width: 445px;
+        width: 100%;
+
+        @media (min-width: $breakepoint_lg) {
+            max-width: 563px;
+            margin-bottom: -103px;
+            margin-top: 171px;
+        }
+    }
+
+    &_column {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url('../../images/_about/about_bg_mobile.png');
+            top: -28%;
+            left: -16%;
+            width: 241px;
+            height: 221px;
+            background-size: 241px 221px;
+            z-index: -1;
+
+            @media (min-width: $breakepoint_lg) {
+                background-image: url('../../images/_about/about_bg.png');
+                left: -153%;
+                width: 848px;
+                height: 671px;
+                background-size: 848px 671px;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url('../../images/_about/about_bg_last_mobile.png');
+            top: -52%;
+            left: -29%;
+            width: 330px;
+            height: 330px;
+            background-size: 330px 330px;
+            z-index: -2;
+
+            @media (min-width: $breakepoint_lg) {
+                background-image: url('../../images/_about/about_bg_last.png');
+                top: -61%;
+                left: -167%;
+                width: 924px;
+                height: 950px;
+                background-size: 924px 950px;
+            }
+        }
+    }
+
+    &_img {
+        margin: 0 auto;
+    }
+
+    &_image {
+        margin: 0 auto;
+        max-width: 70px;
+        width: 100%;
+        margin-bottom: 130px;
+        z-index: 10;
+
+        @media (min-width: $breakepoint_lg) {
+            max-width: 193px;
+            margin-top: 119px;
+            margin-bottom: 108px;
+        }
+    }
+
+    &_btn {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}

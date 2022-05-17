@@ -1,0 +1,14 @@
+marquee {
+    background: #5A4039;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: rgba(255, 245, 0, 0.6);
+
+    span {
+        margin-left: 15px;
+    }
+}

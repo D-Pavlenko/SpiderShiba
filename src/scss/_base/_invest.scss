@@ -1,0 +1,161 @@
+.invest_wrapper {
+    background: #30298C;
+}
+
+.invest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $breakepoint_lg) {
+        flex-direction: row;
+    }
+
+    &_box-nav {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 550px;
+        margin-bottom: 50px;
+        z-index: 10;
+
+        @media (min-width: $breakepoint_lg) {
+            max-width: 490px;
+        }
+
+        &__title {
+            text-align: left;
+            max-width: 350px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        &__item {
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 24px;
+            color: $text-color;
+            opacity: 0.6;
+            margin-bottom: 40px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../../images/_invest/invest.png);
+            top: 0;
+            left: 0;
+            width: 322px;
+            height: 331px;
+            background-size: 322px 331px;
+            z-index: -1;
+
+            @media (min-width: $breakepoint_lg) {
+                top: -39%;
+                width: 644px;
+                height: 662px;
+                background-size: 644px 662px;
+            }
+
+            @media (min-width: $breakepoint_xxl) {
+                top: -23%;
+                left: -5%;
+                width: 504px;
+                height: 522px;
+                background-size: 504px 522px;
+            }
+        }
+    }
+
+    &_box-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+
+        @media (min-width: $breakepoint_lg) {
+            margin-left: 30px;
+            padding: 130px 30px 110px 30px;
+        }
+
+        @media (min-width: $breakepoint_xxl) {
+            margin-left: 60px;
+            padding: 150px 90px 140px 90px;
+        }
+    }
+
+    &_box-info-first {
+        display: flex;
+        margin-bottom: 30px;
+
+        &__image {
+            position: relative;
+            min-width: 107px;
+            height: 107px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                background-image: url(../../images/_invest/massive.png);
+                top: 20%;
+                left: 23%;
+                width: 60px;
+                height: 60px;
+                background-size: 60px 60px;
+            }
+        }
+    }
+
+    &_box-info-second {
+        display: flex;
+
+        &__image {
+            position: relative;
+            min-width: 107px;
+            height: 107px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                background-image: url(../../images/_invest/value.png);
+                top: 20%;
+                left: 23%;
+                width: 60px;
+                height: 60px;
+                background-size: 60px 60px;
+            }
+        }
+    }
+
+    &_box-info__description {
+        max-width: 700px;
+        margin-left: 20px;
+
+        &-title {
+            margin-bottom: 10px;
+
+            @media (min-width: $breakepoint_sm) {
+                text-align: left;
+            }
+        }
+
+        &-text {
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 25px;
+            color: $text-color;
+            opacity: 0.8;
+        }
+    }
+}
+
+.btn_invest {
+    max-width: 404px;
+}

@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $main-color;
+  font-family: $font;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 390px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: $breakepoint_xsm) {
+    max-width: 546px;
+  }
+
+  @media (min-width: $breakepoint_sm) {
+    max-width: 700px;
+  }
+
+  @media (min-width: $breakepoint_md) {
+    max-width: 992px;
+  }
+
+  @media (min-width: $breakepoint_lg) {
+    max-width: 1766px;
+  }
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 50px;
+  color: $text-color;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: $text-color;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: $text-color;
+}
+
+h4 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $text-color;
+
+  @media (min-width: $breakepoint_lg) {
+    font-size: 35px;
+    line-height: 42px;
+  }
+}
+
+.btn {
+  background-color: $btn-color;
+  display: block;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  color: $text-color;
+  text-align: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+a.btn {
+  text-decoration: none;
+}

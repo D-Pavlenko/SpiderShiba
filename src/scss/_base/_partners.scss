@@ -1,0 +1,28 @@
+.partners_wrapper {
+    background: #162344;
+}
+
+.partners {
+    padding-top: 70px;
+    padding-bottom: 140px;
+
+    &_title {
+        margin-bottom: 40px;
+    }
+
+    &_logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: -10px;
+        margin-right: -10px;
+
+        &-img {
+            max-width: 303px;
+            max-height: 80px;
+            // width: 100%;
+            margin: 0 5px 15px;
+        }
+    }
+
+}
