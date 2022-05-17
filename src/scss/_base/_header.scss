@@ -6,7 +6,7 @@
     align-items: center;
 
     &_wrapper {
-        background: url(../../images/_header/header_bg_mobile.png) no-repeat;
+        background: url(../images/header/header_bg_mobile.png) no-repeat;
         min-height: 945px;
         background-size: cover;
 
@@ -15,7 +15,7 @@
         }
 
         @media (min-width: $breakepoint_md) {
-            background: url(../../images/_header/header_bg.png) no-repeat;
+            background: url(../images/header/header_bg.png) no-repeat;
             min-height: 800px;
             background-size: cover;
             width: 100%;
