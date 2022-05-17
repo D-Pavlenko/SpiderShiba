@@ -25,7 +25,7 @@
         &::after {
             content: '';
             position: absolute;
-            background-image: url('../../images/_about/about_bg_mobile.png');
+            background-image: url('../images/about/about_bg_mobile.png');
             top: -28%;
             left: -16%;
             width: 241px;
@@ -34,7 +34,7 @@
             z-index: -1;
 
             @media (min-width: $breakepoint_lg) {
-                background-image: url('../../images/_about/about_bg.png');
+                background-image: url('../images/about/about_bg.png');
                 left: -153%;
                 width: 848px;
                 height: 671px;
@@ -45,7 +45,7 @@
         &::before {
             content: '';
             position: absolute;
-            background-image: url('../../images/_about/about_bg_last_mobile.png');
+            background-image: url('../images/about/about_bg_last_mobile.png');
             top: -52%;
             left: -29%;
             width: 330px;
@@ -54,7 +54,7 @@
             z-index: -2;
 
             @media (min-width: $breakepoint_lg) {
-                background-image: url('../../images/_about/about_bg_last.png');
+                background-image: url('../images/about/about_bg_last.png');
                 top: -61%;
                 left: -167%;
                 width: 924px;
